@@ -1,7 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87ae194e-8224-4c60-a406-c71389ba192d" name="Default" comment="" />
+    <list default="true" id="87ae194e-8224-4c60-a406-c71389ba192d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javacpp.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javacv.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/opencv-windows-x86_64.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/opencv.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/ImageHandler.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/bpnn/Bp.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/bpnn/BpMonitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/bpnn/ImageClassification.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/bpnn/Test.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/getfeature/ImageCenter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/gui/CommonGuiTools$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/gui/CommonGuiTools.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/gui/DataManagerGui$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/gui/DataManagerGui$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/gui/DataManagerGui.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/gui/FunctionGui.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/gui/ImageFeatureExtractGui.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/gui/MainWindowGui$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/gui/MainWindowGui$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/gui/MainWindowGui$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/gui/MainWindowGui.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/gui/NetworkMonitorGui$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/gui/NetworkMonitorGui$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/gui/NetworkMonitorGui.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/gui/NeuronNetworkSettingGui$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/gui/NeuronNetworkSettingGui$2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/gui/NeuronNetworkSettingGui$3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/gui/NeuronNetworkSettingGui.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/gui/TrainAndTestGui.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/mycomponents/MyProgressBar.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/other/Demo2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/other/JChartLibApp.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/other/JProcessBarDemo.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/other/RemoveJChartLibNote.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/other/RuntimeTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/tools/CommonTools.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/tools/ComputerInfo.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/tools/ComputerMonitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/tools/CpuMonitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/tools/FileOperate.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/tools/HackJChartLibLineChart.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/tools/HackJChartLibLinechartRenderer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/tools/JvmInfo.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/tools/JvmMemMonitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/tools/MemoryMonitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/com/zyh/image/tools/StringArrayExpanded.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/data/1.bmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/data/10.bmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/data/11.bmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/data/12.bmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/data/13.bmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/data/2.bmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/data/3.bmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/data/4.bmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/data/5.bmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/data/6.bmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/data/7.bmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/data/8.bmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/data/9.bmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/data/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/data/机器学习_周志华_0000.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/data/证件照.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/images/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/images/icon.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/data/12.bmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/data/13.bmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/data/机器学习_周志华_0000.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/data/证件照.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/javacpp.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/javacv.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/opencv.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/opencv_windows_x86_64.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/opencv_windows_x86_64__2_.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/data/Default.rdp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/ImageClassification/data/desktop.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/data/Default.rdp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/data/desktop.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zyh/image/other/TestLog4j.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zyh/image/tools/HackJChartLibLineChart.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zyh/image/tools/HackJChartLibLinechartRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageClassification.iml" afterPath="$PROJECT_DIR$/ImageClassification.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zyh/image/gui/DataManagerGui.java" afterPath="$PROJECT_DIR$/src/com/zyh/image/gui/DataManagerGui.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zyh/image/gui/NetworkMonitorGui.java" afterPath="$PROJECT_DIR$/src/com/zyh/image/gui/NetworkMonitorGui.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,10 +102,41 @@
       <file leaf-file-name="DataManagerGui.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zyh/image/gui/DataManagerGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+            <state relative-caret-position="-264">
+              <caret line="123" column="43" lean-forward="false" selection-start-line="123" selection-start-column="43" selection-end-line="123" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageCenter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zyh/image/getfeature/ImageCenter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BpMonitor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zyh/image/bpnn/BpMonitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="44" lean-forward="false" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestLog4j.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/zyh/image/other/TestLog4j.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#208#209#0" expanded="true" />
+                <element signature="e#248#249#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -27,30 +145,38 @@
       <file leaf-file-name="NetworkMonitorGui.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zyh/image/gui/NetworkMonitorGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1485">
-              <caret line="81" column="8" lean-forward="false" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Demo2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zyh/image/other/Demo2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="249">
+              <caret line="62" column="94" lean-forward="false" selection-start-line="62" selection-start-column="94" selection-end-line="62" selection-end-column="94" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageClassification.iml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ImageClassification.iml">
+      <file leaf-file-name="Bp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zyh/image/bpnn/Bp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="213">
+              <caret line="17" column="74" lean-forward="false" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageFeatureExtractGui.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zyh/image/gui/ImageFeatureExtractGui.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-26">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NeuronNetworkSettingGui.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zyh/image/gui/NeuronNetworkSettingGui.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -88,7 +214,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/zyh/image/bpnn/Test.java" />
         <option value="$PROJECT_DIR$/src/com/zyh/image/bpnn/Bp.java" />
         <option value="$PROJECT_DIR$/src/com/zyh/image/bpnn/CommonTools.java" />
         <option value="$PROJECT_DIR$/src/com/zyh/image/gui/Test.java" />
@@ -122,14 +247,24 @@
         <option value="$PROJECT_DIR$/src/com/zyh/image/gui/MainWindowGui.java" />
         <option value="$PROJECT_DIR$/src/com/zyh/image/other/Test2.java" />
         <option value="$PROJECT_DIR$/src/com/zyh/image/other/Test3.java" />
-        <option value="$PROJECT_DIR$/src/com/zyh/image/gui/NetworkMonitorGui.java" />
         <option value="$PROJECT_DIR$/src/com/zyh/image/gui/NeuronNetworkSettingGui.java" />
         <option value="$PROJECT_DIR$/src/com/zyh/image/tools/FileClone.java" />
         <option value="$PROJECT_DIR$/src/com/zyh/image/other/Demo2.java" />
         <option value="$PROJECT_DIR$/src/com/zyh/image/tools/StringExpanded.java" />
         <option value="$PROJECT_DIR$/src/com/zyh/image/tools/FileOperate.java" />
-        <option value="$PROJECT_DIR$/src/com/zyh/image/gui/DataManagerGui.java" />
         <option value="$PROJECT_DIR$/ImageClassification.iml" />
+        <option value="$PROJECT_DIR$/src/com/zyh/image/tools/HackJChart.java" />
+        <option value="$PROJECT_DIR$/lib/JChartLib.jar!/com/bitagentur/chart/JChartLibLineChart.class" />
+        <option value="$PROJECT_DIR$/lib/JChartLib.jar!/com/bitagentur/renderer/JChartLibLinechartRenderer.class" />
+        <option value="$PROJECT_DIR$/lib/JChartLib.jar!/com/bitagentur/renderer/JChartLibRender.class" />
+        <option value="$PROJECT_DIR$/lib/JChartLib.jar!/com/bitagentur/renderer/I_JChartLibRenderer.class" />
+        <option value="$PROJECT_DIR$/src/com/zyh/image/tools/HackJChartLibLinechartRenderer.java" />
+        <option value="$PROJECT_DIR$/src/com/zyh/image/tools/HackJChartLibLineChart.java" />
+        <option value="$PROJECT_DIR$/lib/JChartLib.jar!/com/bitagentur/chart/JChartLibBaseChart.class" />
+        <option value="$PROJECT_DIR$/src/com/zyh/image/gui/DataManagerGui.java" />
+        <option value="$PROJECT_DIR$/src/com/zyh/image/gui/NetworkMonitorGui.java" />
+        <option value="$PROJECT_DIR$/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/com/zyh/image/other/TestLog4j.java" />
       </list>
     </option>
   </component>
@@ -139,12 +274,13 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="16" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="16" />
+    <option name="y" value="72" />
     <option name="width" value="1296" />
     <option name="height" value="788" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -160,9 +296,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -174,6 +307,11 @@
             <path>
               <item name="ImageClassification" type="b2602c69:ProjectViewProjectNode" />
               <item name="ImageClassification" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ImageClassification" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ImageClassification" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -187,12 +325,15 @@
               <item name="ImageClassification" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="image" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -206,9 +347,11 @@
       <recent name="com.zyh.image.tools" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\新建文件夹\ImageClassification\resources" />
+      <recent name="D:\新建文件夹\ImageClassification\lib" />
+      <recent name="D:\新建文件夹\ImageClassification\resources\data" />
       <recent name="D:\新建文件夹\playproject\lib" />
       <recent name="D:\新建文件夹\playproject\resources\data" />
-      <recent name="D:\新建文件夹\playproject\resources\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -223,7 +366,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainWindowGui">
+  <component name="RunManager" selected="Application.TestLog4j">
     <configuration name="MainWindowGui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -232,6 +375,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.zyh.image.gui.MainWindowGui" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ImageClassification" />
+      <envs />
+    </configuration>
+    <configuration name="TestLog4j" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.zyh.image.other.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.zyh.image.other.TestLog4j" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -336,9 +498,14 @@
       <properties />
       <listeners />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.MainWindowGui" />
+      <item index="1" class="java.lang.String" itemvalue="Application.TestLog4j" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.MainWindowGui" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.TestLog4j" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MainWindowGui" />
       </list>
     </recent_temporary>
   </component>
@@ -359,27 +526,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="16" y="72" width="1296" height="788" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45394737" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49846625" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2911184" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4892638" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24671052" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48312885" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38729197" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37540454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12708019" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.431853" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43092105" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -403,139 +571,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/asm-3.2.jar!/org/objectweb/asm/MethodWriter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="103" column="16" lean-forward="true" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/asm-3.2.jar!/org/objectweb/asm/ClassAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/asm-3.2.jar!/org/objectweb/asm/ClassWriter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="137" column="24" lean-forward="false" selection-start-line="137" selection-start-column="24" selection-end-line="137" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/asm-3.2.jar!/org/objectweb/asm/FieldWriter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2569">
-          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/java/jdk1.8.0_144/jre/lib/rt.jar!/jdk/internal/org/objectweb/asm/ClassVisitor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/asm-3.2.jar!/org/objectweb/asm/ClassVisitor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/java/jdk1.8.0_144/jre/lib/rt.jar!/jdk/internal/org/objectweb/asm/tree/ClassNode.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="37" column="36" lean-forward="false" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/java/jdk1.8.0_144/jre/lib/rt.jar!/jdk/internal/org/objectweb/asm/tree/TryCatchBlockNode.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/java/jdk1.8.0_144/jre/lib/rt.jar!/jdk/internal/org/objectweb/asm/tree/MethodNode.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/我的资料库/Documents/Downloads/JChartLib/JChartLib.jar!/com/bitagentur/renderer/I_JChartLibRenderer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/我的资料库/Documents/Downloads/JChartLib/JChartLib.jar!/com/bitagentur/renderer/JChartLibRender.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1647">
-          <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/java/jdk1.8.0_144/jre/lib/rt.jar!/jdk/internal/org/objectweb/asm/tree/AbstractInsnNode.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/java/jdk1.8.0_144/jre/lib/rt.jar!/jdk/internal/org/objectweb/asm/tree/LdcInsnNode.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/java/jdk1.8.0_144/jre/lib/rt.jar!/jdk/internal/org/objectweb/asm/ClassReader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="295" column="26" lean-forward="false" selection-start-line="295" selection-start-column="26" selection-end-line="295" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Desktop/JChartLib.jar!/com/bitagentur/chart/JChartLibAreachart.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/java/jdk1.8.0_144/src.zip!/java/io/FileOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4607">
-          <caret line="160" column="11" lean-forward="false" selection-start-line="160" selection-start-column="11" selection-end-line="160" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/java/jdk1.8.0_144/src.zip!/java/net/URL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="181" column="24" lean-forward="true" selection-start-line="181" selection-start-column="24" selection-end-line="181" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/java/jdk1.8.0_144/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="1305" column="19" lean-forward="true" selection-start-line="1305" selection-start-column="19" selection-end-line="1305" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/java/jdk1.8.0_144/src.zip!/java/io/InputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="44" column="22" lean-forward="false" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/java/jdk1.8.0_144/jre/lib/rt.jar!/jdk/internal/org/objectweb/asm/ClassWriter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -593,13 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zyh/image/gui/NeuronNetworkSettingGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/java/jdk1.8.0_144/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -612,22 +640,12 @@
     <entry file="file://$PROJECT_DIR$/resources/data/3.bmp" />
     <entry file="file://$PROJECT_DIR$/resources/data/4.bmp" />
     <entry file="file://$PROJECT_DIR$/resources/data/5.bmp" />
-    <entry file="file://$PROJECT_DIR$/resources/data/6.bmp" />
     <entry file="file://$PROJECT_DIR$/resources/data/7.bmp" />
     <entry file="file://$PROJECT_DIR$/resources/data/8.bmp" />
-    <entry file="file://$PROJECT_DIR$/resources/data/9.bmp" />
-    <entry file="file://$PROJECT_DIR$/resources/data/10.bmp" />
     <entry file="jar://C:/Program Files/java/jdk1.8.0_144/src.zip!/javax/swing/ListModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="42" column="17" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zyh/image/tools/StringArrayExpanded.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-202">
-          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -645,34 +663,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zyh/image/gui/DataManagerGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zyh/image/other/ForReadClass.java" />
     <entry file="file://$PROJECT_DIR$/src/com/zyh/image/other/Test2.java" />
     <entry file="file://$PROJECT_DIR$/src/com/zyh/image/other/Test3.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/zyh/image/gui/NetworkMonitorGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="81" column="8" lean-forward="false" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zyh/image/other/Demo2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
           <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -681,7 +678,206 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/data/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/data/10.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/data/9.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/data/6.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/data/11.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/data/13.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyh/image/tools/StringArrayExpanded.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/JChartLib.jar!/com/bitagentur/chart/JChartLibLineChart.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" column="58" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/JChartLib.jar!/com/bitagentur/renderer/I_JChartLibRenderer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/JChartLib.jar!/com/bitagentur/renderer/JChartLibRender.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/JChartLib.jar!/com/bitagentur/renderer/JChartLibLinechartRenderer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="25" column="55" lean-forward="false" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+          <folding>
+            <element signature="e#974#975#0" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyh/image/tools/HackJChartLibLinechartRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/JChartLib.jar!/com/bitagentur/chart/JChartLibBaseChart.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyh/image/tools/HackJChartLibLineChart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="60" lean-forward="false" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyh/image/gui/ImageFeatureExtractGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyh/image/gui/NeuronNetworkSettingGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyh/image/gui/DataManagerGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-264">
+          <caret line="123" column="43" lean-forward="false" selection-start-line="123" selection-start-column="43" selection-end-line="123" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyh/image/getfeature/ImageCenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyh/image/gui/NetworkMonitorGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="62" column="94" lean-forward="false" selection-start-line="62" selection-start-column="94" selection-end-line="62" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyh/image/bpnn/Bp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="17" column="74" lean-forward="false" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/log4j.jar!/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyh/image/bpnn/BpMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="44" lean-forward="false" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zyh/image/other/TestLog4j.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <element signature="e#208#209#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

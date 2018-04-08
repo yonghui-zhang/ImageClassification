@@ -11,5 +11,10 @@
     <orderEntry type="library" name="JChartLib" level="project" />
     <orderEntry type="library" name="sigar" level="project" />
     <orderEntry type="library" name="log4j" level="project" />
+    <orderEntry type="library" name="javacpp" level="project" />
+    <orderEntry type="library" name="javacv" level="project" />
+    <orderEntry type="library" name="opencv" level="project" />
+    <orderEntry type="library" name="opencv-windows-x86_64" level="project" />
+    <orderEntry type="library" name="opencv-windows-x86_64 (2)" level="project" />
   </component>
 </module>

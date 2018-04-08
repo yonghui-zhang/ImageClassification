@@ -24,6 +24,7 @@ import java.lang.reflect.Field;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 
 /*
   神经网络的性能监控
@@ -46,40 +47,20 @@ public class NetworkMonitorGui implements FunctionGui{
     public void settingGui(JPanel panel) {
 
         /*************神经网络平台监控面板***************/
-
         //改用GridBagLayout灵活变动布局
         GridBagLayout gridBagLayout = new GridBagLayout();
         panel.setLayout(gridBagLayout);
         panel.setBackground(Color.WHITE);
         GridBagConstraints gridBagConstraints = new GridBagConstraints();
 
-//        /***********利用反射干掉恶心的作者note*******/
-//        //JChartLibLinechartRenderer chartLibLinechartRenderer = (JChartLibLinechartRenderer);
-//        //   chartLibLinechartRenderer
-//        Class clazz = JChartLibRender.class;
-//        Field field = null;
-//        try {
-//            field = clazz.getDeclaredField("note");
-//        } catch (NoSuchFieldException e) {
-//            e.printStackTrace();
-//        }
-//        field.setAccessible(true);
-//        try {
-//            field.set("note", "");
-//        } catch (IllegalAccessException e) {
-//            e.printStackTrace();
-//        }
-//        System.out.println(field);
-//
-//        /**************************************************/
 
         /**************先加入图表样例************/
         JChartLibDataSet dataSet = new JChartLibDataSet();
 
-        JChartLibSerie values = new JChartLibSerie("BP神经网络训练数据");
+        JChartLibSerie values = new JChartLibSerie("图像分类误差率");
         dataSet.addDataSerie(values);
-        values.addValue(new Date(), 5);
-        JChartLibLineChart chart = new JChartLibLineChart("BP神经网络训练情况", "时间", "训练误差", dataSet);
+ //       values.addValue(new Date(), 5);
+        HackJChartLibLineChart chart = new HackJChartLibLineChart("BP神经网络训练情况", "迭代次数", "训练误差率", dataSet);
 
 
         gridBagConstraints.gridwidth = 0;
@@ -89,40 +70,25 @@ public class NetworkMonitorGui implements FunctionGui{
         chartPanel.setBackground(Color.PINK);
         panel.add(chartPanel);
 
-//        JChartLibDataSet dataSet2 = new JChartLibDataSet();
-//
-//        JChartLibSerie values2 = new JChartLibSerie("BP神经网络训练数据");
-//        dataSet2.addDataSerie(values2);
-//        values.addValue(new Date(), 5);
-//        JChartLibLineChart chart2 = new JChartLibLineChart("BP神经网络训练情况", "时间", "训练正确率", dataSet);
-//
-//        gridBagConstraints.gridwidth = 0;
-//        JChartLibPanel chartPanel2 = new JChartLibPanel(chart);
-//        chartPanel2.setPreferredSize(new Dimension(400, 300));
-//        chartPanel2.setBackground(Color.PINK);
-//        gridBagLayout.setConstraints(chartPanel2, gridBagConstraints);
-//        panel.add(chartPanel2);
-//        Random random = new Random();
-//        Random random2 = new Random(4);
-//        int[] i = new int[1];
-//        i[0] = 10;
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                while(true)
-//                {
-//                    values.addValue(new Date(), random.nextInt(50) - 25);
-//                    values2.addValue(new Date(), random2.nextInt(100));
-//                    try {
-//                        Thread.sleep(1000);
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                    }
-//                    chartPanel.updateUI();
-//                    chartPanel2.updateUI();
-//                }
-//            }
-//        }).start();
+
+        Random random = new Random();
+        final int[] flag = {0};
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while(true)
+                {
+                    values.addValue(random.nextInt(100) + 1);
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    chartPanel.updateUI();
+                }
+            }
+        }).start();
 
 
 //        /************填充***************/
