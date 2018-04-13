@@ -9,6 +9,8 @@ public class TestLog4j {
 
     public static void main(String[] args)
     {
-        logger.info("使用log4j打印");
+        logger.info("this is info message .");
+        logger.debug("this is debug message .");
+        logger.error("this is error message .");
     }
 }

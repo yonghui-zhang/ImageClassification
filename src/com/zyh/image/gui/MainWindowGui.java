@@ -1,5 +1,7 @@
 package com.zyh.image.gui;
 
+import com.zyh.image.mycomponents.MyButton;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -164,13 +166,12 @@ public class MainWindowGui {
         closeIcon.setImage(closeIcon.getImage().getScaledInstance(29, 30, Image.SCALE_DEFAULT));
 
         gridBagConstraints.gridwidth = 0;
-        JButton closeBtn = new JButton(closeIcon);
+        MyButton closeBtn = new MyButton(closeIcon);
         gridBagLayout.setConstraints(closeBtn, gridBagConstraints);
         logoPanel.add(closeBtn);
 
         ArrayList<JButton> btns = new ArrayList<>();
         btns.add(closeBtn);
-        CommonGuiTools.setJButtonsStyle(btns, Color.WHITE);
 
         closeBtn.addActionListener(new ActionListener(){
             @Override
