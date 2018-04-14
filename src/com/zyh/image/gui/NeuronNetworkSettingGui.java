@@ -73,9 +73,15 @@ public class NeuronNetworkSettingGui implements FunctionGui{
 //        panel.add(label2);
 //        panel.add(textField2);
 
-
+        GridBagLayout gridBagLayout = new GridBagLayout();
+        panel.setLayout(gridBagLayout);
+        GridBagConstraints gridBagConstraints = new GridBagConstraints();
         /***********模拟tensorflow的playground的界面********/
+        gridBagConstraints.gridwidth = 0;
+        gridBagConstraints.gridheight = 0;
         MyBpnnMainGui bpnnMainGui = new MyBpnnMainGui();
+        gridBagLayout.setConstraints(bpnnMainGui, gridBagConstraints);
+     //   bpnnMainGui.setBackground(Color.PINK);
         panel.add(bpnnMainGui);
     }
 }

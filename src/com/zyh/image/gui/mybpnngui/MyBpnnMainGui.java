@@ -1,7 +1,5 @@
 package com.zyh.image.gui.mybpnngui;
 
-import org.bytedeco.javacpp.opencv_core;
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -19,11 +17,21 @@ public class MyBpnnMainGui extends JPanel{
     private void initMainGui()
     {
         setBackground(Color.WHITE);
-        ParameterTopBarGui topBarGui = new ParameterTopBarGui();
+        GridBagLayout gridBagLayout = new GridBagLayout();
+        setLayout(gridBagLayout);
+        GridBagConstraints gridBagConstraints = new GridBagConstraints();
 
         /******显示顶部神经网络参数栏*****/
-        add(topBarGui, BorderLayout.NORTH);
+        gridBagConstraints.gridwidth = 0;
+        ParameterTopBarGui topBarGui = new ParameterTopBarGui();
+        gridBagLayout.setConstraints(topBarGui, gridBagConstraints);
         /******神经网络可视化************/
+        gridBagConstraints.gridwidth = 0;
+        gridBagConstraints.gridheight = 0;
+        MyBpnnMainContext bpnnMainContext = new MyBpnnMainContext();
+        gridBagLayout.setConstraints(bpnnMainContext, gridBagConstraints);
 
+        add(topBarGui);
+        add(bpnnMainContext);
     }
 }

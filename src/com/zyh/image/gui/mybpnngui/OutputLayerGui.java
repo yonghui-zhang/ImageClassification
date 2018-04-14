@@ -3,44 +3,42 @@ package com.zyh.image.gui.mybpnngui;
 import javax.swing.*;
 import java.awt.*;
 
-/**
- * 神经网络可视化之特征输入层
- */
-public class FeaturesInputLayerGui extends JPanel{
+public class OutputLayerGui extends JPanel {
 
-    public FeaturesInputLayerGui()
+    public OutputLayerGui()
     {
         setBackground(Color.WHITE);
         initGui();
     }
-    /**
-     * 初始化界面
-     */
+
     private void initGui()
     {
         GridBagLayout gridBagLayout = new GridBagLayout();
         setLayout(gridBagLayout);
         GridBagConstraints gridBagConstraints = new GridBagConstraints();
+
         /*******大标题******/
         gridBagConstraints.gridwidth = 0;
         JLabel topTitle = new JLabel();
-        topTitle.setText("FEATURES");
+        topTitle.setText("OUTPUT");
+        topTitle.setPreferredSize(new Dimension(100, 30));
         topTitle.setFont(new Font("宋体", Font.BOLD, 20));
         gridBagLayout.setConstraints(topTitle, gridBagConstraints);
 
         /*******小描述*********/
         gridBagConstraints.gridwidth = 0;
         JLabel descripts = new JLabel();
-        descripts.setText("<html>Which properties<br> do you want to<br> feed in ?<br><br></html>");
+        descripts.setPreferredSize(new Dimension(100, 30));
+        descripts.setText("Test loss 0.498");
         gridBagLayout.setConstraints(descripts, gridBagConstraints);
 
-        /*******特征数组(暂时写死)*****/
+        /*******展示数据训练情况*****/
         gridBagConstraints.gridwidth = 0;
-        InputNeuraslGui inputNeuraslGui = new InputNeuraslGui();
-        gridBagLayout.setConstraints(inputNeuraslGui, gridBagConstraints);
+        OutputLayerContext outputLayerContext = new OutputLayerContext();
+        gridBagLayout.setConstraints(outputLayerContext, gridBagConstraints);
 
         add(topTitle);
         add(descripts);
-        add(inputNeuraslGui);
+        add(outputLayerContext);
     }
 }

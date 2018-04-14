@@ -13,6 +13,7 @@ public class InputNeuraslGui extends JPanel{
 
     public InputNeuraslGui()
     {
+        setBackground(Color.WHITE);
         initGui();
     }
 
@@ -22,7 +23,7 @@ public class InputNeuraslGui extends JPanel{
     private void initGui()
     {
         /*********暂时为10个特征*******/
-        setLayout(new GridLayout(10, 2, 5, 10));
+        setLayout(new GridLayout(9, 2, 5, 10));
         JLabel label0 = new JLabel();
         label0.setText("特征1");
         JLabel label1 = new JLabel();
@@ -41,8 +42,6 @@ public class InputNeuraslGui extends JPanel{
         label7.setText("特征8");
         JLabel label8 = new JLabel();
         label8.setText("特征9");
-        JLabel label9 = new JLabel();
-        label9.setText("特征10");
 
         JLabel neural0 = new JLabel();
         JLabel neural1 = new JLabel();
@@ -53,7 +52,6 @@ public class InputNeuraslGui extends JPanel{
         JLabel neural6 = new JLabel();
         JLabel neural7 = new JLabel();
         JLabel neural8 = new JLabel();
-        JLabel neural9 = new JLabel();
 
         neural0.setIcon(getScaledIcon(getClass().getResource("/images/neural.png")));
         neural1.setIcon(getScaledIcon(getClass().getResource("/images/neural.png")));
@@ -64,7 +62,6 @@ public class InputNeuraslGui extends JPanel{
         neural6.setIcon(getScaledIcon(getClass().getResource("/images/neural.png")));
         neural7.setIcon(getScaledIcon(getClass().getResource("/images/neural.png")));
         neural8.setIcon(getScaledIcon(getClass().getResource("/images/neural.png")));
-        neural9.setIcon(getScaledIcon(getClass().getResource("/images/neural.png")));
 
         add(label0);
         add(neural0);
@@ -84,8 +81,6 @@ public class InputNeuraslGui extends JPanel{
         add(neural7);
         add(label8);
         add(neural8);
-        add(label9);
-        add(neural9);
     }
 
     /**
@@ -96,7 +91,7 @@ public class InputNeuraslGui extends JPanel{
     private ImageIcon getScaledIcon(URL path)
     {
         ImageIcon imageIcon = new ImageIcon(path);
-        imageIcon.setImage(imageIcon.getImage().getScaledInstance(36, 36, Image.SCALE_DEFAULT));
+        imageIcon.setImage(imageIcon.getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT));
         return imageIcon;
     }
 
