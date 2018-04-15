@@ -1,10 +1,15 @@
 package com.zyh.image.gui.mybpnngui;
 
+import com.zyh.image.tools.ImageIconTool;
+
 import javax.swing.*;
 import java.awt.*;
 import java.net.URL;
 
 public class HiddenLayerBottomLineGui extends JPanel{
+
+    private int DEFAULT_LINE_WIDTH = 336;
+    private int DEFAULT_LINE_HEIGHT = 18;
 
     public HiddenLayerBottomLineGui()
     {
@@ -15,15 +20,8 @@ public class HiddenLayerBottomLineGui extends JPanel{
     private void initGui()
     {
         JLabel line = new JLabel();
-        line.setIcon(getScaledIcon(getClass().getResource("/images/line.png")));
+        line.setIcon(ImageIconTool.getScaledIconFromUrl(getClass().getResource("/images/line.png"), DEFAULT_LINE_WIDTH, DEFAULT_LINE_HEIGHT));
 
         add(line);
-    }
-
-    private ImageIcon getScaledIcon(URL path)
-    {
-        ImageIcon imageIcon = new ImageIcon(path);
-        imageIcon.setImage(imageIcon.getImage().getScaledInstance(336, 18, Image.SCALE_DEFAULT));
-        return imageIcon;
     }
 }

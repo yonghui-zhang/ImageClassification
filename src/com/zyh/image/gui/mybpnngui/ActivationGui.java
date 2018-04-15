@@ -35,7 +35,4 @@ public class ActivationGui extends JPanel{
         activation.setMaximumRowCount(4);
 
     }
-
-
-
 }

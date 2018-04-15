@@ -1,6 +1,7 @@
 package com.zyh.image.gui;
 
 import com.zyh.image.tools.FileOperate;
+import com.zyh.image.tools.ImageIconTool;
 import com.zyh.image.tools.StringArrayExpanded;
 
 import javax.swing.*;
@@ -123,9 +124,7 @@ public class DataManagerGui implements FunctionGui{
     {
         /************设置图片自适应**************/
         ImageIcon icon = new ImageIcon(imagePath);
-        Image img = icon.getImage();
-        img.getScaledInstance(label.getWidth(), label.getHeight(), Image.SCALE_DEFAULT);
-        icon.setImage(img);
+        icon = ImageIconTool.getScaledIcon(icon, label.getWidth(), label.getHeight());
         label.setIcon(icon);
         label.setText("");
         label.updateUI();

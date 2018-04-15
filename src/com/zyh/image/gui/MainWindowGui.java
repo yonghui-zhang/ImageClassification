@@ -1,6 +1,7 @@
 package com.zyh.image.gui;
 
 import com.zyh.image.mycomponents.MyButton;
+import com.zyh.image.tools.ImageIconTool;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,8 +13,11 @@ public class MainWindowGui {
 
     private JFrame frame = new JFrame();
 
-    private int windowWidth = 900;
-    private int windowHeight = 600;
+    private int DEFAULT_WINDOW_WIDTH = 900;
+    private int DEFAULT_WINDOW_HEIGHT = 600;
+
+    private int DEFAULT_SOFTWAREICON_WIDTH = 256;
+    private int DEFAULT_SOFTWAREICON_HEIGHT = 190;
 
     private int first_x, first_y;
 
@@ -34,6 +38,13 @@ public class MainWindowGui {
     private JButton btn3;
     private JButton btn4;
 
+    /**
+     * 初始化组件池
+     */
+    static {
+        WidgetPool.getInstance();//保证池子肯定被初始化
+    }
+
     public MainWindowGui()
     {
         Container container = frame.getContentPane();
@@ -44,6 +55,7 @@ public class MainWindowGui {
         /***************设置软件图标*****************/
         setSoftwareIcon(frame);
     }
+
     /*
       设置右侧内容
      */
@@ -209,7 +221,7 @@ public class MainWindowGui {
             public void mouseDragged(MouseEvent e) {
                 int x = e.getX() - first_x;
                 int y = e.getY() - first_y;
-                frame.setBounds(frame.getX()+x, frame.getY()+y, windowWidth, windowHeight);
+                frame.setBounds(frame.getX()+x, frame.getY()+y, DEFAULT_WINDOW_WIDTH, DEFAULT_WINDOW_HEIGHT);
             }
             @Override
             public void mouseMoved(MouseEvent e) {}
@@ -218,8 +230,8 @@ public class MainWindowGui {
          int screenHeight = Toolkit.getDefaultToolkit().getScreenSize().height;
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setBounds((screenWidth-windowWidth)/2, (screenHeight-windowHeight)/2,
-                windowWidth, windowHeight);
+        frame.setBounds((screenWidth-DEFAULT_WINDOW_WIDTH)/2, (screenHeight-DEFAULT_WINDOW_HEIGHT)/2,
+                DEFAULT_WINDOW_WIDTH, DEFAULT_WINDOW_HEIGHT);
         frame.setTitle("BP神经网络图像分类");
         frame.setUndecorated(true);//去掉边框
         frame.setVisible(true);
@@ -230,9 +242,9 @@ public class MainWindowGui {
     private void setSoftwareIcon(JFrame frame)
     {
         /***************设置软件图标*****************/
-        ImageIcon logoIcon = new ImageIcon(getClass().getResource("/images/icon.jpg"));
-        logoIcon.setImage(logoIcon.getImage().getScaledInstance(256, 190, Image.SCALE_DEFAULT));
-        frame.setIconImage(logoIcon.getImage());
+        ImageIcon imageIcon = ImageIconTool.getScaledIconFromUrl(getClass().getResource("/images/icon.jpg"),
+                DEFAULT_SOFTWAREICON_WIDTH, DEFAULT_SOFTWAREICON_HEIGHT);
+        frame.setIconImage(imageIcon.getImage());
     }
     public static void main(String[] args)
     {

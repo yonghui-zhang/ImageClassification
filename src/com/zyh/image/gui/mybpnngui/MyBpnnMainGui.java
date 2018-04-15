@@ -1,5 +1,7 @@
 package com.zyh.image.gui.mybpnngui;
 
+import com.zyh.image.gui.WidgetPool;
+
 import javax.swing.*;
 import java.awt.*;
 

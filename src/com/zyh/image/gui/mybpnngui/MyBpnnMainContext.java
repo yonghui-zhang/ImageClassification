@@ -1,9 +1,11 @@
 package com.zyh.image.gui.mybpnngui;
 
+import com.zyh.image.gui.WidgetPool;
+
 import javax.swing.*;
 import java.awt.*;
 
-public class MyBpnnMainContext extends JPanel {
+public class MyBpnnMainContext extends JPanel{
 
     public MyBpnnMainContext()
     {
@@ -12,30 +14,16 @@ public class MyBpnnMainContext extends JPanel {
 
     private void initGui()
     {
-        setBackground(Color.WHITE);
-        GridBagLayout gridBagLayout = new GridBagLayout();
-        setLayout(gridBagLayout);
-        GridBagConstraints gridBagConstraints = new GridBagConstraints();
+        CardLayout cardLayout = new CardLayout();
+        setLayout(cardLayout);
+        /********添加Up Card******/
+        MyBpnnMainContextUpCard upCard = new MyBpnnMainContextUpCard();
+        /*********把Up Card添加到Widget Pool中*********/
+        WidgetPool.getInstance().addWidget("MyBpnnMainContextUpCard", upCard);
+        /*********添加Bottom Card*********/
+        MyBpnnMainContextBottomCard bottomCard = new MyBpnnMainContextBottomCard();
 
-        /************左部特征输入**********/
-        gridBagConstraints.gridwidth = 1;
-        gridBagConstraints.gridheight = 0;
-        FeaturesInputLayerGui inputLayerGui = new FeaturesInputLayerGui();
-        gridBagLayout.setConstraints(inputLayerGui, gridBagConstraints);
-        /*************中部隐藏层*************/
-        gridBagConstraints.gridwidth = 3;
-        gridBagConstraints.gridheight = 0;
-        HiddenLayersGui hiddenLayersGui = new HiddenLayersGui();
-        gridBagLayout.setConstraints(hiddenLayersGui, gridBagConstraints);
-
-        /************右部输出层*************/
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.gridheight = 0;
-        OutputLayerGui outputLayerGui = new OutputLayerGui();
-        gridBagLayout.setConstraints(outputLayerGui, gridBagConstraints);
-
-        add(inputLayerGui);
-        add(hiddenLayersGui);
-        add(outputLayerGui);
+        add(bottomCard);
+        add(upCard);
     }
 }

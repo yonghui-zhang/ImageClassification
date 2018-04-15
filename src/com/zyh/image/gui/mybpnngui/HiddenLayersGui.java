@@ -1,17 +1,22 @@
 package com.zyh.image.gui.mybpnngui;
 
+import com.zyh.image.gui.WidgetPool;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.Iterator;
 
 /**
  * 神经网络隐藏层
  */
 public class HiddenLayersGui extends JPanel{
 
-    private int DEFAULT_HIDDEN_LAYERS = 2;
-    private int hidden_layers = DEFAULT_HIDDEN_LAYERS;
+    private int DEFAULT_HIDDEN_LAYERS_MIN = 1;
+    private int DEFAULT_HIDDEN_LAYERS_MAX = 5;
+
+    private int hidden_layers;
 
     private HiddenLayersContext hiddenLayersContext;
 
@@ -40,7 +45,8 @@ public class HiddenLayersGui extends JPanel{
 
         /**********Hidden Layer正文块**********/
         gridBagConstraints.gridwidth = 0;
-        hiddenLayersContext = new HiddenLayersContext(hidden_layers);
+        hiddenLayersContext = new HiddenLayersContext();
+        hidden_layers = hiddenLayersContext.getDEFAULT_HIDDEN_LAYERS();
         gridBagLayout.setConstraints(hiddenLayersContext, gridBagConstraints);
 
         add(hiddenLayerTopBarGui);
@@ -62,10 +68,11 @@ public class HiddenLayersGui extends JPanel{
             public void mouseClicked(MouseEvent e) {
               /******增加一层隐藏层***/
               hidden_layers++;
-              fixHiddenLayers();
-              updateHiddenLayers(title);
-
-              updateUI();
+              if (!isFixHiddenLayers())
+              {
+                  addOneHiddenLayer();
+              }
+              title.setText(" " + hidden_layers + " HIDDEN LAYERS");
             }
         });
     }
@@ -79,38 +86,58 @@ public class HiddenLayersGui extends JPanel{
             public void mouseClicked(MouseEvent e) {
                 /******减少一层隐藏层******/
                 hidden_layers--;
-                fixHiddenLayers();
-                updateHiddenLayers(title);
-
-                updateUI();
+                if (!isFixHiddenLayers())
+                {
+                    subOneHiddenLayer();
+                }
+                title.setText(" " + hidden_layers + " HIDDEN LAYERS");
             }
         });
     }
+    /**
+     * 增加一层隐藏层
+     */
+    private void addOneHiddenLayer()
+    {
+        /*********增加一层隐藏层*******/
+        OneHiddenLayerGui oneHiddenLayerGui = new OneHiddenLayerGui();
+        hiddenLayersContext.add(oneHiddenLayerGui);
+        hiddenLayersContext.getHiddenLayers().add(oneHiddenLayerGui);
+
+        hiddenLayersContext.updateUI();
+    }
 
     /**
-     * 更新隐藏层
+     * 减少一层隐藏层
      */
-    private void updateHiddenLayers(JLabel title)
+    private void subOneHiddenLayer()
     {
-        /***********更新隐藏层*************/
-        remove(hiddenLayersContext);
-        hiddenLayersContext = new HiddenLayersContext(hidden_layers);
-        add(hiddenLayersContext);
-        /**********更新隐藏层的层数*******/
-        title.setText(" " + hidden_layers + " HIDDEN LAYERS");
+        /*********减少一层隐藏层（默认减去第一个隐藏层）******/
+        Iterator<OneHiddenLayerGui> iterator = hiddenLayersContext.getHiddenLayers().iterator();
+        if (iterator.hasNext())
+        {
+            OneHiddenLayerGui oneHiddenLayerGui = iterator.next();
+            hiddenLayersContext.remove(oneHiddenLayerGui);
+            hiddenLayersContext.getHiddenLayers().remove(oneHiddenLayerGui);
+        }
+        hiddenLayersContext.updateUI();
     }
 
     /**
      * 检查隐藏层的边界（默认为1到5）
      */
-    private void fixHiddenLayers()
+    private boolean isFixHiddenLayers()
     {
-        if(hidden_layers < 1)
+        if(hidden_layers < DEFAULT_HIDDEN_LAYERS_MIN)
         {
-            hidden_layers = 1;
-        } else if (hidden_layers > 5)
+            hidden_layers = DEFAULT_HIDDEN_LAYERS_MIN;
+            return true;
+        } else if (hidden_layers > DEFAULT_HIDDEN_LAYERS_MAX)
         {
-            hidden_layers = 5;
+            hidden_layers = DEFAULT_HIDDEN_LAYERS_MAX;
+            return true;
+        }else {
+            return false;
         }
     }
 }

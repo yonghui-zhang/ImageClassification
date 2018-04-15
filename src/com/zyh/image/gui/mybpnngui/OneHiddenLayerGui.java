@@ -8,13 +8,19 @@ import java.awt.*;
  */
 public class OneHiddenLayerGui extends JPanel{
 
-    public OneHiddenLayerGui(int neurals)
+    private  OneHiddenLayerNeuralContext oneContext ;
+
+    public OneHiddenLayerGui()
     {
         setBackground(Color.WHITE);
-        initGui(neurals);
+        initGui();
     }
 
-    private void initGui(int neurals)
+    public OneHiddenLayerNeuralContext getOneContext() {
+        return oneContext;
+    }
+
+    private void initGui()
     {
         GridBagLayout gridBagLayout = new GridBagLayout();
         setLayout(gridBagLayout);
@@ -27,12 +33,11 @@ public class OneHiddenLayerGui extends JPanel{
 
         gridBagConstraints.gridwidth = 0;
         JLabel title = new JLabel();
-        title.setText("9 neurals");
+        title.setText("8 neurals");
         gridBagLayout.setConstraints(title, gridBagConstraints);
         /*************下部的神经元**********/
         gridBagConstraints.gridwidth = 0;
         gridBagConstraints.gridheight = 0;
-        OneHiddenLayerNeuralContext oneContext ;
         oneContext = new OneHiddenLayerNeuralContext(topBarGui.getAddbtn(),
                 topBarGui.getSubbtn(),
                 title);

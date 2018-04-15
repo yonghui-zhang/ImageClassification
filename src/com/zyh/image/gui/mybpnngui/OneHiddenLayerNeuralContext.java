@@ -15,7 +15,8 @@ import java.util.Iterator;
 public class OneHiddenLayerNeuralContext extends JPanel{
 
     private ArrayList<Neural> neuralList;
-    private int DEFAULT_NEURALS = 9;
+    private int DEFAULT_NEURALS = 8;
+    private int DEFAULT_MINNEURALS = 1;
     private int neurals = DEFAULT_NEURALS;
 
     private JButton addbtn;
@@ -62,7 +63,7 @@ public class OneHiddenLayerNeuralContext extends JPanel{
             @Override
             public void mouseClicked(MouseEvent e) {
                 neurals++;
-                if (neurals > 9)
+                if (neurals > DEFAULT_NEURALS)
                 {
                     fixOneHiddenLayerNeurals();
                 }else{
@@ -84,7 +85,7 @@ public class OneHiddenLayerNeuralContext extends JPanel{
             @Override
             public void mouseClicked(MouseEvent e) {
                 neurals--;
-                if(neurals < 1)
+                if(neurals < DEFAULT_MINNEURALS)
                 {
                     fixOneHiddenLayerNeurals();
                 }else{
@@ -101,7 +102,7 @@ public class OneHiddenLayerNeuralContext extends JPanel{
      */
     private void addOneNeural()
     {
-        Neural neural = new Neural();
+        Neural neural = new Neural(false);
         neuralList.add(neural);
         add(neural);
     }
@@ -124,12 +125,12 @@ public class OneHiddenLayerNeuralContext extends JPanel{
      */
     private void fixOneHiddenLayerNeurals()
     {
-        if(neurals < 1)
+        if(neurals < DEFAULT_MINNEURALS)
         {
-            neurals = 1;
-        }else if(neurals > 9)
+            neurals = DEFAULT_MINNEURALS;
+        }else if(neurals > DEFAULT_NEURALS)
         {
-            neurals = 9;
+            neurals = DEFAULT_NEURALS;
         }
     }
 }

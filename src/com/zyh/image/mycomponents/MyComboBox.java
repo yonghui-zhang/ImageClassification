@@ -1,5 +1,7 @@
 package com.zyh.image.mycomponents;
 
+import com.zyh.image.tools.ImageIconTool;
+
 import javax.swing.*;
 import javax.swing.plaf.basic.BasicComboBoxUI;
 import java.awt.*;
@@ -42,12 +44,14 @@ public class MyComboBox<E> extends JComboBox{
      */
     class MyComboBoxUi extends BasicComboBoxUI
     {
+        private int DEFAULT_WIDTH = 17;
+        private int DEFAULT_HEIGHT = 14;
         @Override
         protected JButton createArrowButton() {
 
           MyButton button = new MyButton();
-          ImageIcon imageIcon = new ImageIcon(getClass().getResource("/images/arrow.png"));
-          imageIcon.setImage(imageIcon.getImage().getScaledInstance(17, 14, Image.SCALE_DEFAULT));
+          ImageIcon imageIcon = ImageIconTool.getScaledIconFromUrl(getClass().getResource("/images/arrow.png"),
+                  DEFAULT_WIDTH, DEFAULT_HEIGHT);
           button.setIcon(imageIcon);
           return button;
         }
