@@ -1,6 +1,7 @@
 package com.zyh.image.gui.mybpnngui;
 
 import com.zyh.image.gui.WidgetPool;
+import com.zyh.image.mycomponents.MyPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,7 +12,7 @@ import java.util.Iterator;
 /**
  * 神经网络隐藏层
  */
-public class HiddenLayersGui extends JPanel{
+public class HiddenLayersGui extends MyPanel{
 
     private int DEFAULT_HIDDEN_LAYERS_MIN = 1;
     private int DEFAULT_HIDDEN_LAYERS_MAX = 5;
@@ -22,8 +23,6 @@ public class HiddenLayersGui extends JPanel{
 
     public HiddenLayersGui()
     {
-        super();
-        setBackground(Color.WHITE);
         initGui();
     }
 

@@ -1,9 +1,11 @@
 package com.zyh.image.gui.mybpnngui;
 
+import com.zyh.image.mycomponents.MyPanel;
+
 import javax.swing.*;
 import java.awt.*;
 
-public class MyBpnnMainContextBottomCard extends JPanel {
+public class MyBpnnMainContextBottomCard extends MyPanel {
 
     public MyBpnnMainContextBottomCard()
     {
@@ -12,7 +14,6 @@ public class MyBpnnMainContextBottomCard extends JPanel {
 
     private void initGui()
     {
-        setBackground(Color.WHITE);
         GridBagLayout gridBagLayout = new GridBagLayout();
         setLayout(gridBagLayout);
         GridBagConstraints gridBagConstraints = new GridBagConstraints();

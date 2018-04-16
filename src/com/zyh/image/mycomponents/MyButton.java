@@ -12,7 +12,15 @@ public class MyButton extends JButton {
 
     public MyButton()
     {
-        this(null);
+        super();
+        setUI(new CustomButtonUi());//自定义点击背景色
+        customStyle();
+    }
+
+    public MyButton(String text)
+    {
+        super(text);
+        customStyle();
     }
 
     public MyButton(Icon icon)
@@ -20,6 +28,14 @@ public class MyButton extends JButton {
         super(icon);
         /******自定义风格*****/
         setUI(new CustomButtonUi());//自定义点击背景色
+        customStyle();
+    }
+
+    /**
+     * 自定义按钮风格
+     */
+    private void customStyle()
+    {
         setBackground(Color.WHITE);
         setFocusPainted(false);//去掉button的文字焦点圈
         setBorderPainted(false);//去掉button外边框

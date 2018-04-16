@@ -1,18 +1,19 @@
 package com.zyh.image.gui.mybpnngui;
 
+import com.zyh.image.mycomponents.MyPanel;
+
 import javax.swing.*;
 import java.awt.*;
 
 /**
  * 每一层隐藏层的GUI
  */
-public class OneHiddenLayerGui extends JPanel{
+public class OneHiddenLayerGui extends MyPanel{
 
     private  OneHiddenLayerNeuralContext oneContext ;
 
     public OneHiddenLayerGui()
     {
-        setBackground(Color.WHITE);
         initGui();
     }
 

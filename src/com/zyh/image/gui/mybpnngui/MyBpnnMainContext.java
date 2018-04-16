@@ -25,5 +25,8 @@ public class MyBpnnMainContext extends JPanel{
 
         add(bottomCard);
         add(upCard);
+
+        cardLayout.first(this);
+        cardLayout.first(this);
     }
 }

@@ -2,6 +2,7 @@ package com.zyh.image.gui.mybpnngui;
 
 import com.zyh.image.gui.WidgetPool;
 import com.zyh.image.gui.mybpnngui.entity.Neural;
+import com.zyh.image.mycomponents.MyPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,7 +12,7 @@ import java.util.Iterator;
 /**
  * 隐藏层的正文
  */
-public class HiddenLayersContext extends JPanel{
+public class HiddenLayersContext extends MyPanel{
 
     private ArrayList<OneHiddenLayerGui> hiddenLayers;
 
@@ -20,7 +21,6 @@ public class HiddenLayersContext extends JPanel{
     public HiddenLayersContext()
     {
         setLayout(new GridLayout(1, DEFAULT_HIDDEN_LAYERS, 0, 10));
-        setBackground(Color.WHITE);
         initGui();
     }
 

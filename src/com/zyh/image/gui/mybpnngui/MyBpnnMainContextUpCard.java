@@ -15,7 +15,7 @@ public class MyBpnnMainContextUpCard extends JPanel{
     private void initGui()
     {
         /*******设置面板的属性为纯透明*******/
-        setBackground(null);
+     //   setBackground(null);
         setOpaque(false);
     }
 }

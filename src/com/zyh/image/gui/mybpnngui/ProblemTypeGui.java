@@ -1,11 +1,12 @@
 package com.zyh.image.gui.mybpnngui;
 
 import com.zyh.image.mycomponents.MyComboBox;
+import com.zyh.image.mycomponents.MyPanel;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class ProblemTypeGui extends JPanel{
+public class ProblemTypeGui extends MyPanel{
 
     private JLabel title;
     private MyComboBox problemType;
@@ -26,7 +27,6 @@ public class ProblemTypeGui extends JPanel{
 
     private void initGui()
     {
-        setBackground(Color.WHITE);
         title = new JLabel();
         title.setPreferredSize(new Dimension(120, 10));
         title.setText("Problem type");

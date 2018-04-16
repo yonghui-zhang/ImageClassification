@@ -1,16 +1,17 @@
 package com.zyh.image.gui.mybpnngui;
 
+import com.zyh.image.mycomponents.MyPanel;
+
 import javax.swing.*;
 import java.awt.*;
 
 /**
  * 自定义神经网络GUI的顶部参数设置
  */
-public class ParameterTopBarGui extends JPanel {
+public class ParameterTopBarGui extends MyPanel {
 
     public ParameterTopBarGui()
     {
-        setBackground(Color.WHITE);
         setLayout(new GridLayout(1, 5, 20, 0));
         initTopBarGui();
     }

@@ -1,16 +1,17 @@
 package com.zyh.image.gui.mybpnngui;
 
+import com.zyh.image.mycomponents.MyPanel;
+
 import javax.swing.*;
 import java.awt.*;
 
 /**
  * 神经网络可视化之特征输入层
  */
-public class FeaturesInputLayerGui extends JPanel{
+public class FeaturesInputLayerGui extends MyPanel {
 
     public FeaturesInputLayerGui()
     {
-        setBackground(Color.WHITE);
         initGui();
     }
     /**

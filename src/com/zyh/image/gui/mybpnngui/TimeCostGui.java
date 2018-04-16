@@ -1,9 +1,11 @@
 package com.zyh.image.gui.mybpnngui;
 
+import com.zyh.image.mycomponents.MyPanel;
+
 import javax.swing.*;
 import java.awt.*;
 
-public class TimeCostGui extends JPanel{
+public class TimeCostGui extends MyPanel{
 
     private JLabel title;
     private JLabel timecost;
@@ -32,7 +34,6 @@ public class TimeCostGui extends JPanel{
 
     private void initGui()
     {
-        setBackground(Color.WHITE);
         title = new JLabel();
         title.setText("Time Cost");
         timecost = new JLabel();

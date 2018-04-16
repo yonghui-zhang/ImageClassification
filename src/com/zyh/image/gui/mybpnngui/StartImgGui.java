@@ -51,7 +51,6 @@ public class StartImgGui extends MyButton{
     private void initGui()
     {
         setPreferredSize(new Dimension(61, 62));
-        setBackground(Color.WHITE);
         setIcon(ImageIconTool.getScaledIconFromUrl(getClass().getResource("/images/start.png"), DEFAULT_WIDTH, DEFAULT_HEIGHT));
     }
 }

@@ -1,6 +1,9 @@
-package com.zyh.image.gui.mybpnngui;
+package com.zyh.image.gui;
 
 import com.zyh.image.gui.WidgetPool;
+import com.zyh.image.gui.mybpnngui.MyBpnnMainContext;
+import com.zyh.image.gui.mybpnngui.ParameterTopBarGui;
+import com.zyh.image.mycomponents.MyPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -8,17 +11,15 @@ import java.awt.*;
 /**
  * 自定义的神经网络训练图解（模仿tensorflow的playground online）
  */
-public class MyBpnnMainGui extends JPanel{
+public class NeuralNetworkSettingGui extends MyPanel{
 
-    public MyBpnnMainGui()
+    public NeuralNetworkSettingGui()
     {
-       super();
        initMainGui();
     }
 
     private void initMainGui()
     {
-        setBackground(Color.WHITE);
         GridBagLayout gridBagLayout = new GridBagLayout();
         setLayout(gridBagLayout);
         GridBagConstraints gridBagConstraints = new GridBagConstraints();

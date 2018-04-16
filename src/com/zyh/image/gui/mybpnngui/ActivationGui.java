@@ -1,18 +1,18 @@
 package com.zyh.image.gui.mybpnngui;
 
 import com.zyh.image.mycomponents.MyComboBox;
+import com.zyh.image.mycomponents.MyPanel;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class ActivationGui extends JPanel{
+public class ActivationGui extends MyPanel {
 
     private JLabel title;
     private MyComboBox activation;
 
     public ActivationGui()
     {
-        super();
         initGui();
         setCustomLayout();
     }
@@ -26,7 +26,6 @@ public class ActivationGui extends JPanel{
 
     private void initGui()
     {
-        setBackground(Color.WHITE);
         title = new JLabel();
         title.setText("Activation");
 

@@ -1,5 +1,6 @@
 package com.zyh.image.gui;
 
+import com.zyh.image.mycomponents.MyPanel;
 import com.zyh.image.tools.FileOperate;
 import com.zyh.image.tools.ImageIconTool;
 import com.zyh.image.tools.StringArrayExpanded;
@@ -14,27 +15,18 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class DataManagerGui implements FunctionGui{
+public class DataManagerGui extends MyPanel{
 
-    private static DataManagerGui dataManagerGui = new DataManagerGui();
-
-    private DataManagerGui()
+    public DataManagerGui()
     {
-
+       initGui();
     }
 
-    public static DataManagerGui getInstance()
-    {
-        return dataManagerGui;
-    }
-
-    @Override
-    public void settingGui(JPanel panel) {
+    private void initGui() {
         /********数据集的管理面板**************/
         //改用GridBagLayout灵活变动布局
         GridBagLayout gridBagLayout = new GridBagLayout();
-        panel.setLayout(gridBagLayout);
-        panel.setBackground(Color.WHITE);
+        setLayout(gridBagLayout);
         GridBagConstraints gridBagConstraints = new GridBagConstraints();
 
         String path =  System.getProperty("user.dir") + "/resources/data/";
@@ -91,14 +83,13 @@ public class DataManagerGui implements FunctionGui{
         addJListListener(scrollPane, path, imagePreLook);
         addFileSelectListener(button, scrollPane, path, imagePreLook);
 
-        panel.add(titleLabel);
-        panel.add(nopLabel);
-        panel.add(preLookTitle);
-        panel.add(button);
-        panel.add(scrollPane);
-        panel.add(nopLabel2);
-        panel.add(imagePreLook);
-
+        add(titleLabel);
+        add(nopLabel);
+        add(preLookTitle);
+        add(button);
+        add(scrollPane);
+        add(nopLabel2);
+        add(imagePreLook);
     }
 
     /**
@@ -124,7 +115,7 @@ public class DataManagerGui implements FunctionGui{
     {
         /************设置图片自适应**************/
         ImageIcon icon = new ImageIcon(imagePath);
-        icon = ImageIconTool.getScaledIcon(icon, label.getWidth(), label.getHeight());
+       // icon = ImageIconTool.getScaledIcon(icon, label.getWidth(), label.getHeight());
         label.setIcon(icon);
         label.setText("");
         label.updateUI();

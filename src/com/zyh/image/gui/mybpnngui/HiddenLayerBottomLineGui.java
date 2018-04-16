@@ -1,19 +1,19 @@
 package com.zyh.image.gui.mybpnngui;
 
+import com.zyh.image.mycomponents.MyPanel;
 import com.zyh.image.tools.ImageIconTool;
 
 import javax.swing.*;
 import java.awt.*;
 import java.net.URL;
 
-public class HiddenLayerBottomLineGui extends JPanel{
+public class HiddenLayerBottomLineGui extends MyPanel{
 
     private int DEFAULT_LINE_WIDTH = 336;
     private int DEFAULT_LINE_HEIGHT = 18;
 
     public HiddenLayerBottomLineGui()
     {
-        setBackground(Color.WHITE);
         initGui();
     }
 

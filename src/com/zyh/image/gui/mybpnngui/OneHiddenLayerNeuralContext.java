@@ -1,6 +1,7 @@
 package com.zyh.image.gui.mybpnngui;
 
 import com.zyh.image.gui.mybpnngui.entity.Neural;
+import com.zyh.image.mycomponents.MyPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,7 +13,7 @@ import java.util.Iterator;
 /**
  * 动态生成的hidden layer neural
  */
-public class OneHiddenLayerNeuralContext extends JPanel{
+public class OneHiddenLayerNeuralContext extends MyPanel{
 
     private ArrayList<Neural> neuralList;
     private int DEFAULT_NEURALS = 8;
@@ -25,7 +26,6 @@ public class OneHiddenLayerNeuralContext extends JPanel{
 
     public OneHiddenLayerNeuralContext(JButton addbtn, JButton subbtn, JLabel title)
     {
-         setBackground(Color.WHITE);
          initItems(addbtn, subbtn, title);
          setLayout(new GridLayout(neurals, 1, 0, 10));
          initGui();

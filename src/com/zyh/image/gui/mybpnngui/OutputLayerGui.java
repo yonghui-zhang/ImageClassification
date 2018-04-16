@@ -1,13 +1,14 @@
 package com.zyh.image.gui.mybpnngui;
 
+import com.zyh.image.mycomponents.MyPanel;
+
 import javax.swing.*;
 import java.awt.*;
 
-public class OutputLayerGui extends JPanel {
+public class OutputLayerGui extends MyPanel {
 
     public OutputLayerGui()
     {
-        setBackground(Color.WHITE);
         initGui();
     }
 

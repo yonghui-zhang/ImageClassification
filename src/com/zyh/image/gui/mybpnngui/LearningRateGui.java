@@ -1,11 +1,12 @@
 package com.zyh.image.gui.mybpnngui;
 
 import com.zyh.image.mycomponents.MyComboBox;
+import com.zyh.image.mycomponents.MyPanel;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class LearningRateGui extends JPanel{
+public class LearningRateGui extends MyPanel{
 
     private JLabel title;
     private MyComboBox learnningRate;
@@ -25,7 +26,6 @@ public class LearningRateGui extends JPanel{
     }
     private void initGui()
     {
-        setBackground(Color.WHITE);
         title = new JLabel();
         title.setText("Learning rate");
 

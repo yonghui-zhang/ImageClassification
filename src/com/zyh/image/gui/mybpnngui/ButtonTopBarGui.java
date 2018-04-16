@@ -1,6 +1,7 @@
 package com.zyh.image.gui.mybpnngui;
 
 import com.zyh.image.mycomponents.MyButton;
+import com.zyh.image.mycomponents.MyPanel;
 import com.zyh.image.tools.ImageIconTool;
 
 import javax.swing.*;
@@ -12,7 +13,7 @@ import java.net.URL;
 /**
  * 加号和减号的top bar
  */
-public class ButtonTopBarGui extends JPanel{
+public class ButtonTopBarGui extends MyPanel {
 
     private MyButton addbtn;
     private MyButton subbtn;
@@ -38,12 +39,10 @@ public class ButtonTopBarGui extends JPanel{
         setLayout(new GridLayout(1, 2));
         /************上部的add button*******/
         addbtn = new MyButton();
-        addbtn.setPreferredSize(new Dimension(32, 32));
-        addbtn.setBackground(Color.WHITE);
+        addbtn.setPreferredSize(new Dimension(DEFAULT_BUTTON_WIDTH, DEFAULT_BUTTON_HEIGHT));
         /***********上部的sub button********/
         subbtn = new MyButton();
-        subbtn.setPreferredSize(new Dimension(32, 32));
-        subbtn.setBackground(Color.WHITE);
+        subbtn.setPreferredSize(new Dimension(DEFAULT_BUTTON_WIDTH, DEFAULT_BUTTON_HEIGHT));
 
         addbtn.setIcon(ImageIconTool.getScaledIconFromUrl(getClass().getResource("/images/add.png"), DEFAULT_BUTTON_WIDTH, DEFAULT_BUTTON_HEIGHT));
         subbtn.setIcon(ImageIconTool.getScaledIconFromUrl(getClass().getResource("/images/sub.png"), DEFAULT_BUTTON_WIDTH, DEFAULT_BUTTON_HEIGHT));

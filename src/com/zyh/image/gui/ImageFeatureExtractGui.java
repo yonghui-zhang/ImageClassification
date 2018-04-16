@@ -1,27 +1,22 @@
 package com.zyh.image.gui;
 
 import com.zyh.image.ImageHandler;
+import com.zyh.image.mycomponents.MyPanel;
 
 import javax.swing.*;
 
-public class ImageFeatureExtractGui implements FunctionGui{
+public class ImageFeatureExtractGui extends MyPanel{
 
-    private static ImageFeatureExtractGui imageFeature = new ImageFeatureExtractGui();
-
-    private ImageFeatureExtractGui()
+    public ImageFeatureExtractGui()
     {
+         initGui();
+    }
 
-    }
-    public static ImageFeatureExtractGui getInstance()
-    {
-        return imageFeature;
-    }
-    @Override
-    public void settingGui(JPanel panel) {
+    private void initGui() {
         /***********图像特征提取的面板***************/
 
         JButton btn = new JButton("图像特征提取的面板");
-        panel.add(btn);
+        add(btn);
         /*************数字图像处理的几种特征的选取*****/
     }
 }

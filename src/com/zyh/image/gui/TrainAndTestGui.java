@@ -1,26 +1,20 @@
 package com.zyh.image.gui;
 
+import com.zyh.image.mycomponents.MyPanel;
+
 import javax.swing.*;
 
-public class TrainAndTestGui implements FunctionGui{
+public class TrainAndTestGui extends MyPanel{
 
-    private static TrainAndTestGui trainAndTest = new TrainAndTestGui();
-
-    private TrainAndTestGui()
+    public TrainAndTestGui()
     {
-
+        initGui();
     }
 
-    public static TrainAndTestGui getInstance()
-    {
-        return trainAndTest;
-    }
-
-    @Override
-    public void settingGui(JPanel panel) {
+    private void initGui() {
 
         /*********神经网络的训练和测试集的验证***********/
         JButton btn = new JButton("神经网络的训练和测试集的验证");
-        panel.add(btn);
+        add(btn);
     }
 }

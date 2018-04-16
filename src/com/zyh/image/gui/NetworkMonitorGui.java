@@ -1,56 +1,35 @@
 package com.zyh.image.gui;
 
-import com.bitagentur.chart.JChartLibLineChart;
 import com.bitagentur.data.JChartLibDataSet;
 import com.bitagentur.data.JChartLibSerie;
-import com.bitagentur.renderer.I_JChartLibRenderer;
-import com.bitagentur.renderer.JChartLibLinechartRenderer;
 import com.bitagentur.renderer.JChartLibPanel;
-import com.bitagentur.renderer.JChartLibRender;
+import com.zyh.image.mycomponents.MyPanel;
 import com.zyh.image.mycomponents.MyProgressBar;
 import com.zyh.image.tools.*;
-import jdk.internal.org.objectweb.asm.ClassReader;
-import jdk.internal.org.objectweb.asm.ClassWriter;
-import jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
-import jdk.internal.org.objectweb.asm.tree.ClassNode;
-import jdk.internal.org.objectweb.asm.tree.LdcInsnNode;
-import jdk.internal.org.objectweb.asm.tree.MethodNode;
 import org.hyperic.sigar.SigarException;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.IOException;
-import java.lang.reflect.Field;
-import java.util.Date;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Random;
 
 /*
   神经网络的性能监控
  */
-public class NetworkMonitorGui implements FunctionGui{
+public class NetworkMonitorGui extends MyPanel{
 
-    private static NetworkMonitorGui networkMonitorGui = new NetworkMonitorGui();
-
-    private NetworkMonitorGui()
+    public NetworkMonitorGui()
     {
-
+        initGui();
     }
 
-    public static NetworkMonitorGui getInstance()
-    {
-        return networkMonitorGui;
-    }
-
-    @Override
-    public void settingGui(JPanel panel) {
+    private void initGui() {
+        JButton button = new JButton("TEST");
+        add(button);
 
         /*************神经网络平台监控面板***************/
         //改用GridBagLayout灵活变动布局
         GridBagLayout gridBagLayout = new GridBagLayout();
-        panel.setLayout(gridBagLayout);
-        panel.setBackground(Color.WHITE);
+        setLayout(gridBagLayout);
         GridBagConstraints gridBagConstraints = new GridBagConstraints();
 
 
@@ -68,7 +47,7 @@ public class NetworkMonitorGui implements FunctionGui{
         chartPanel.setPreferredSize(new Dimension(500, 300));
         gridBagLayout.setConstraints(chartPanel, gridBagConstraints);
         chartPanel.setBackground(Color.PINK);
-        panel.add(chartPanel);
+        add(chartPanel);
 
 
         Random random = new Random();
@@ -91,11 +70,6 @@ public class NetworkMonitorGui implements FunctionGui{
         }).start();
 
 
-//        /************填充***************/
-//        gridBagConstraints.gridwidth = 2;
-//        JLabel nopLabel0 = new JLabel();
-//        gridBagLayout.setConstraints(nopLabel0, gridBagConstraints);
-//        panel.add(nopLabel0);
             /****************加入计算机的信息********************/
             gridBagConstraints.gridwidth = 4;
             JPanel comInfo = null;
@@ -105,20 +79,20 @@ public class NetworkMonitorGui implements FunctionGui{
                 e.printStackTrace();
             }
             gridBagLayout.setConstraints(comInfo, gridBagConstraints);
-            panel.add(comInfo);
+            add(comInfo);
             /************加入对jvm的内存监控***************/
             gridBagConstraints.gridwidth = 2;
             MyProgressBar myProgressBar0 = new MyProgressBar();
             JPanel panel0 = myProgressBar0.getChildpanel();
             gridBagLayout.setConstraints(panel0, gridBagConstraints);
-            panel.add(panel0);
+            add(panel0);
 
             /************加入计算机的CPU监控************/
             gridBagConstraints.gridwidth = 2;
             MyProgressBar myProgressBar1 = new MyProgressBar();
             JPanel panel1 = myProgressBar1.getChildpanel();
             gridBagLayout.setConstraints(panel1, gridBagConstraints);
-            panel.add(panel1);
+            add(panel1);
 
 
             /************加入计算机的内存监控************/
@@ -126,7 +100,7 @@ public class NetworkMonitorGui implements FunctionGui{
             MyProgressBar myProgressBar2 = new MyProgressBar();
             JPanel panel2 = myProgressBar2.getChildpanel();
             gridBagLayout.setConstraints(panel2, gridBagConstraints);
-            panel.add(panel2);
+            add(panel2);
 
             new Thread(new Runnable() {
                 @Override
